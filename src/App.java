@@ -10,7 +10,8 @@ import structures.trees.Ejercicio4;
 import structures.trees.Ejercicio3; */
 import structures.trees.BinaryTree;
 import structures.node.*;
-
+import collections.maps.Maps;
+import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -46,7 +47,9 @@ public class App {
         System.out.println("Profundidad máxima del arbol " + ejm4.maxDepth(arbol.getRoot()));
         */
 
-        runSets();
+        // runSets();
+
+        runMaps();
         
     }
 
@@ -105,5 +108,10 @@ public class App {
             }
             System.out.println();
         }
+    }
+
+    private static void runMaps(){
+        Maps maps = new Maps();
+        maps.construirHashMap();
     }
 }
